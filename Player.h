@@ -16,7 +16,10 @@ public:
     {
         name = n;
     }
-
+    void talkTo(NPC person)
+    {
+        person.talk();
+    }
     void showName()
     {
         cout << "Detective " << name << endl;
