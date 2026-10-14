@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include "NPC.h"
 using namespace std;
 
 class Player
