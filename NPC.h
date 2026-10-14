@@ -44,23 +44,87 @@ public:
     
         cout << "Enter your choice: ";
         cin >> choice;
-    
-        if (choice == 1)
+        
+        if (name == "Harshit")
         {
-            cout << name << ": I have something to tell you." << endl;
+            if (choice == 1)
+            {
+                cout << "Harshit: Something is wrong with the old land records." << endl;
+            }
+            else if (choice == 2)
+            {
+                cout << "Harshit: I found a mismatch in the old documents." << endl;
+            }
+            else if (choice == 3)
+            {
+                cout << "You ended the conversation." << endl;
+            }
+            else
+            {
+                cout << "Invalid choice!" << endl;
+            }
         }
-        else if (choice == 2)
+        else if (name == "Aarav")
         {
-            cout << name << ": I am not sure what happened." << endl;
+            if (choice == 1)
+            {
+                cout << "Aarav: Harshit has been acting strange lately." << endl;
+            }
+            else if (choice == 2)
+            {
+                cout << "Aarav: Don't get dragged into the land records issue." << endl;
+            }
+            else if (choice == 3)
+            {
+                cout << "You ended the conversation." << endl;
+            }
+            else
+            {
+                cout << "Invalid choice!" << endl;
+            }
         }
-        else if (choice == 3)
+        else if (name == "Ramesh")
         {
-            cout << "You ended the conversation." << endl;
+            if (choice == 1)
+            {
+                cout << "Ramesh: Harshit has been asking many questions." << endl;
+            }
+            else if (choice == 2)
+            {
+                cout << "Ramesh: I think I saw Aarav near Harshit's house." << endl;
+            }
+            else if (choice == 3)
+            {
+                cout << "You ended the conversation." << endl;
+            }
+            else
+            {
+                cout << "Invalid choice!" << endl;
+            }
+        }
+        else if (name == "Inspector Rao")
+        {
+            if (choice == 1)
+            {
+                cout << "Inspector Rao: I will investigate this matter in the morning." << endl;
+            }
+            else if (choice == 2)
+            {
+                cout << "You ended the conversation." << endl;
+            }
+            else
+            {
+                cout << "Invalid choice!" << endl;
+            }
         }
         else
         {
-            cout << "Invalid choice!" << endl;
+            cout << "No dialogue available." << endl;
         }
+
+        
+    
+
     }
 
      
