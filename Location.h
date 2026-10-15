@@ -12,17 +12,8 @@ private:
     string description;
 
 public:
-    Location(string n, string d)
-    {
-        name = n;
-        description = d;
-    }
-
-    void showLocation()
-    {
-        cout << "\nLocation: " << name << endl;
-        cout << description << endl;
-    }
+    Location(string n, string d);
+    void showLocation();
 };
 
 #endif

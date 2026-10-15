@@ -1,3 +1,4 @@
+
 #ifndef PLAYER_H
 #define PLAYER_H
 
@@ -12,18 +13,9 @@ private:
     string name;
 
 public:
-    Player(string n)
-    {
-        name = n;
-    }
-    void talkTo(NPC person)
-    {
-        person.talk();
-    }
-    void showName()
-    {
-        cout << "Detective " << name << endl;
-    }
+    Player(string n);
+    void showName();
+    void talkTo(NPC person);
 };
 
 #endif
