@@ -1,41 +1,32 @@
-#include "Evidence.h"
-#include <iostream>
-using namespace std;
+// Evidence.cpp - one clue: id, name, description, reliability label.
 
-Evidence::Evidence(string i, string t, string d, string l)
-{
-    id = i;
-    title = t;
-    description = d;
-    location = l;
+#include "Declarations.cpp"
+
+Evidence::Evidence(const string& id, const string& name,
+                   const string& description, const string& reliability) {
+    this->id = id;
+    this->name = name;
+    this->description = description;
+    this->reliability = reliability;
 }
 
-string Evidence::getId() const
-{
+string Evidence::getId() const {
     return id;
 }
 
-string Evidence::getTitle() const
-{
-    return title;
+string Evidence::getName() const {
+    return name;
 }
 
-string Evidence::getDescription() const
-{
+string Evidence::getDescription() const {
     return description;
 }
 
-string Evidence::getLocation() const
-{
-    return location;
+string Evidence::getReliability() const {
+    return reliability;
 }
 
-void Evidence::display() const
-{
-    cout << "\n----------------------------------" << endl;
-    cout << "Evidence ID   : " << id << endl;
-    cout << "Clue          : " << title << endl;
-    cout << "Description   : " << description << endl;
-    cout << "Found at      : " << location << endl;
-    cout << "----------------------------------" << endl;
+void Evidence::display() const {
+    cout << "[" << id << "] (" << reliability << ") " << name << "\n";
+    cout << "   " << description << "\n";
 }

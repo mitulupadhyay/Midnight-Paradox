@@ -1,4 +1,6 @@
-#include "Game.h"
+// main.cpp - entry point.
+
+#include "Declarations.cpp"
 
 int main() {
     Game game;
